@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contacto</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Raleway:400,500,300"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link rel="stylesheet" href="./styles/contact.css" />
+    <link rel="stylesheet" href="estilo.css" />
+  </head>
+  <body class="d-flex flex-column">
+    <header class="d-flex flex-row justify-content-between">
+      <div>
+        <img src="./Imagenes/FRANCOPS3.png" alt="" class="logo mt-2 ms-5" />
+      </div>
+      <nav class="navbar navbar-expand-lg text-primary">
+        <div class="container-fluid">
+          <a
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarScroll"
+            aria-controls="navbarScroll"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span
+              ><img
+                class="imgnavmenudesplegable"
+                src="./Imagenes/menu.png"
+                alt=""
+              />
+            </span>
+          </a>
+          <div class="collapse navbar-collapse" id="navbarScroll">
+            <ul
+              class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll"
+              style="--bs-scroll-height: 300px"
+            >
+              <li class="nav-item">
+                <a
+                  class="nav-link active"
+                  aria-current="page"
+                  href="./index.html"
+                  >INICIO</a
+                >
+              </li>
+
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  id="navbarScrollingDropdown"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  SHOP
+                </a>
+                <ul
+                  class="dropdown-menu"
+                  aria-labelledby="navbarScrollingDropdown"
+                >
+                  <li>
+                    <a class="dropdown-item" href="./shop.html">SHOP</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="./Jugueteria.html"
+                      >Juguetería</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="./Farmacia.html">Farmacia</a>
+                  </li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a href="./contacto.html" class="nav-link">CONTACTO</a>
+              </li>
+              <li>
+                <div id="favoritos"></div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main
+      class="d-flex flex-column justify-content-between align-items-center p-5 mb-5"
+    >
+      <h1 class="animate__animated animate__fadeInDown">
+        Visitanos en nuestro local o dejanos un mensaje!
+      </h1>
+
+      <iframe
+        class="mb-5"
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d410.4596351161735!2d-58.43051781229919!3d-34.61232627600229!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcca429815227f%3A0x5d302e497c2cda87!2sR%C3%ADo%20de%20Janeiro%20300%2C%20C1405CCB%20CABA!5e0!3m2!1ses-419!2sar!4v1644676445243!5m2!1ses-419!2sar"
+        width="400"
+        height="240"
+        style="border: 0"
+        allowfullscreen=""
+        loading="lazy"
+      ></iframe>
+      <div id="mainButton">
+        <div class="btn-text" onclick="openForm()">CONTACTO</div>
+        <div class="modal">
+          <div class="close-button" onclick="closeForm()">x</div>
+          <form onsubmit="handleSendForm()">
+            <div class="form-title">CONTACTO</div>
+            <div class="input-group">
+              <input
+                type="text"
+                id="name"
+                onblur="handleInputBlur(this)"
+                required
+              />
+              <label for="name">Nombre</label>
+            </div>
+            <div class="input-group">
+              <input
+                type="email"
+                id="mail"
+                onblur="handleInputBlur(this)"
+                required
+              />
+              <label for="mail">Email</label>
+            </div>
+            <div class="input-group">
+              <label for="comentario" class="text-areaLabel"
+                >Dejanos tu duda o consulta</label
+              >
+              <textarea
+                id="comentario"
+                class="form-control textarea"
+                placeholder="Escribe tu duda o consulta..."
+                required
+              ></textarea>
+            </div>
+            <button id="enviarmensaje" class="form-button" type="submit">
+              Enviar
+            </button>
+          </form>
+        </div>
+      </div>
+    </main>
+
+    <footer class="d-flex justify-content-center align-items-center">
+      <div><p>Grupo 9 © 2022</p></div>
+    </footer>
+    <script src="./JS/localstorage.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+      crossorigin="anonymous"
+    ></script>
+    <script src="./JS/contact.js"></script>
+  </body>
+</html>

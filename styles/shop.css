@@ -1,0 +1,336 @@
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+  box-sizing: border-box;
+}
+html {
+  height: 100vh;
+}
+body {
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+header {
+  background: url() no-repeat center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  color: white;
+  height: 95vh;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+footer {
+  color: white;
+  height: 10vh;
+  background-color: rgb(0, 172, 131);
+}
+
+.imgnavmenudesplegable {
+  height: 3rem;
+}
+
+.text-white {
+  color: #fff;
+  text-shadow: 0 1px 0 #ddd, 0 2px 0 #ccc, 0 3px 0 #bbb, 0 4px 0 #aaa,
+    0 5px 0 #acacac, 0 6px 1px rgba(0, 0, 0, 0.1), 0 0 5px rgba(0, 0, 0, 0.1),
+    0 1px 3px rgba(0, 0, 0, 0.3), 0 3px 5px rgba(0, 0, 0, 0.2),
+    0 5px 10px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.2),
+    0 20px 20px rgba(0, 0, 0, 0.15);
+}
+
+.wrapper {
+  background: url() no-repeat center center;
+
+  background-attachment: fixed;
+  background-image: url("../Imagenes/imgshop4.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.wrapper2 {
+  background-color: rgb(0, 172, 131);
+  height: 30vh;
+  flex-grow: 1;
+}
+
+.wrapper3 {
+  background: url() no-repeat center center;
+
+  background-attachment: fixed;
+  background-image: url("../Imagenes/imgwrapper3.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 38vh;
+}
+
+/* MODIFICAMOS EL NAV DE BOOTSTRAP*/
+
+.dropdown-menu {
+  background-color: black !important;
+}
+a {
+  color: white !important;
+  text-decoration: none !important;
+}
+.navbar {
+  color: white !important;
+  text-decoration: none !important;
+}
+.jueg2 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.btn {
+  border-radius: 10%;
+  padding: 0.3rem;
+  background-color: rgb(255, 255, 255) !important;
+}
+
+.remover {
+  height: 3rem;
+  border-radius: 10%;
+  padding: 0.3rem;
+  background-color: rgb(255, 255, 255) !important;
+}
+.divnav {
+  width: 100%;
+  height: 20vh;
+  display: flex;
+  justify-content: space-between;
+  position: sticky;
+  top: 0px;
+}
+h1 {
+  text-align: center;
+  height: fit-content;
+  padding-bottom: 0;
+  margin: 15% 5% 5% 5%;
+}
+.title2 {
+  display: flex;
+  justify-content: center;
+  margin-top: 2rem;
+  font-size: 4rem;
+  color: #fff;
+  text-shadow: 0 1px 0 #ddd, 0 2px 0 #ccc, 0 3px 0 #bbb, 0 4px 0 #aaa,
+    0 5px 0 #acacac, 0 6px 1px rgba(0, 0, 0, 0.1), 0 0 5px rgba(0, 0, 0, 0.1),
+    0 1px 3px rgba(0, 0, 0, 0.3), 0 3px 5px rgba(0, 0, 0, 0.2),
+    0 5px 10px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.2),
+    0 20px 20px rgba(0, 0, 0, 0.15);
+}
+.logo {
+  height: 6.5rem;
+}
+main {
+  width: 100%;
+  flex-grow: 1;
+  display: flex;
+}
+.jug {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 3rem;
+}
+.far {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 3rem;
+}
+.imgfar2 {
+  height: 6.5rem;
+}
+.far2 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+span {
+  font-weight: 900;
+}
+
+/*----------cards---------*/
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Lato", sans-serif;
+}
+.jug {
+  border-right: 4px solid rgba(0, 0, 0, 0.082);
+}
+.far {
+  border-left: 4px solid rgba(0, 0, 0, 0.082);
+}
+.container__cards {
+  max-width: 100%;
+  margin: auto;
+  margin-top: 50px;
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: center;
+}
+
+.card {
+  width: 200px;
+  margin: 10px;
+  transition: all 300ms;
+  background-color: rgb(249, 183, 43);
+  display: flex;
+}
+
+.card:hover {
+  width: 30%;
+}
+
+.card .cover {
+  width: 100%;
+  height: 250px;
+  position: relative;
+  overflow: hidden;
+  background-color: rgb(249, 183, 43);
+}
+
+.card .cover img {
+  width: 250px;
+  display: block;
+  margin: auto;
+  position: relative;
+  top: 40px;
+  z-index: 1;
+  filter: drop-shadow(5px 5px 4px rgba(0, 0, 0, 0.5));
+  transition: all 400ms;
+}
+
+.card:hover .cover img {
+  top: 0px;
+  filter: none;
+}
+
+.card .img__back {
+  width: 100%;
+  height: 200px;
+  position: absolute;
+  bottom: -80px;
+  left: 0;
+  background-size: cover;
+  border-radius: 20px;
+  transition: all 300ms;
+}
+
+.card:nth-of-type(1) .img__back {
+  background-image: url(https://i.ibb.co/HGnXjYq/bg1.jpg);
+}
+
+.card:nth-of-type(2) .img__back {
+  background-image: url(https://i.ibb.co/swsWmMQ/bg2.jpg);
+}
+
+.card:nth-of-type(3) .img__back {
+  background-image: url(https://i.ibb.co/wSKR72W/bg3.jpg);
+}
+
+.card:hover .img__back {
+  bottom: -40px;
+}
+
+.card .description {
+  background: white;
+  margin-top: -10px;
+  padding: 20px;
+  border-radius: 0px 0px 20px 20px;
+  transition: all 300ms;
+  background-color: rgb(249, 183, 43);
+}
+
+.card:hover .description {
+  padding: 40px;
+}
+
+.card .description h2 {
+  margin-top: 10px;
+}
+
+.card .description p {
+  margin-top: 10px;
+}
+
+.card .description input {
+  padding: 10px 40px;
+  margin-top: 20px;
+  border: none;
+  background: #3d4046;
+  color: white;
+  font-size: 14px;
+  cursor: pointer;
+  border-radius: 8px;
+  transition: all 300ms;
+}
+
+.card .description input:hover {
+  background: #3d4046;
+}
+
+.fondoVerde {
+  background-color: rgb(0, 172, 131);
+}
+/*GALLERY*/
+
+#demo {
+  height: 100%;
+  position: relative;
+  overflow: hidden;
+}
+
+.green {
+  background-color: #6fb936;
+}
+.thumb {
+  margin-bottom: 30px;
+}
+
+.page-top {
+  margin-top: 85px;
+}
+
+img.zoom {
+  width: 100%;
+  height: 200px;
+  border-radius: 5px;
+  object-fit: cover;
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  -ms-transition: all 0.3s ease-in-out;
+}
+
+.transition {
+  -webkit-transform: scale(1.2);
+  -moz-transform: scale(1.2);
+  -o-transform: scale(1.2);
+  transform: scale(1.2);
+}
+.modal-header {
+  border-bottom: none;
+}
+.modal-title {
+  color: #000;
+}
+.modal-footer {
+  display: none;
+}
+.imglogomenu {
+  height: 5rem;
+}
